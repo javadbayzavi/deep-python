@@ -1,3 +1,6 @@
+from numpy import sort
+
+
 tex = "We are in different"
 t = " part of the world"
 print(tex + t)
@@ -28,6 +31,37 @@ print(set2)
 print(set1)
 set1.difference_update(set2)
 print(set1)
+
 #Lists
 myList = [12,44,"List item"]
 print(myList)
+
+list1 = [1,2,3,4,5,6,7,8,90,11,12,13,14,15,16]
+print(list1)
+list1[2:6] = [33,44,55,66]
+print(list1)
+del list1[4:6]
+print(list1)
+print(len(list1))
+print(77 in list1)
+list1.sort()
+print(list1)
+
+#Dictionary are similar to maps in golang
+dic1 = {"1": 12,"2": 22,"3": 32,"4": 42,"5": 52}
+print(dic1)
+print(dic1["1"])
+del dic1["1"]
+print(dic1)
+dic1.pop("2")
+print(dic1)
+print(dic1.values())
+print(dic1.keys())
+
+#Tuples
+tup1 = (1,2,3,4,5,"six",7,"eight")
+tup2 = tup1[3:4]
+print(tup1)
+print (tup2)
+print (tup1 + tup2)
+
