@@ -2,14 +2,14 @@ import email
 import string
 
 
-class employee:
+class employee():
 
-    #def __init__(self,id,name,family,email,phone) -> None:
-        #self.id = 1
-       # self.name = "Javad"
-        #self.family = "Bayzavi"
-       # self.email = "javadbayzavi@gmail.com"
-       # self.phone = "+989173098261"
+    def __init__(self,id,name,family,email,phone):
+        self.id = id
+        self.name = name
+        self.family = family
+        self.email = email
+        self.phone = phone
 
 # Getter and Setter for class property
     #@property
@@ -26,8 +26,5 @@ class employee:
     def Name(self,value):
         self.name = value
 
-#emp = employee(1,"Javad","Bayzavi","email","1234567890")
-emp = employee()
-emp.id = 12
-emp.name = "Javad"
-print(emp.name)
+emp = employee(1,"Javad","Bayzavi","email","1234567890")
+print(emp.id)
