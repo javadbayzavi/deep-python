@@ -14,7 +14,7 @@ print(tex + t * 4)
 #slicing a string similar to slices in golang
 print(tex[1:3].capitalize())
 
-#Two form of defining sets
+#Two form of defining sets. Set members mus be unique and they are useful for membership checking
 #x1 = set(<iter>)
 x2 = {2,4,"reza"}
 
